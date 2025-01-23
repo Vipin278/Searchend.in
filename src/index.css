@@ -1,0 +1,70 @@
+@tailwind base;
+
+/* Navbar styles */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+@tailwind components;
+@tailwind utilities;
+
+/* Update your CSS file */
+:root {
+  --navbar-transparent: transparent;
+  --navbar-solid: #e5e7eb; /* Tailwind's gray-200 */
+  --primary-blue: #0056b3; /* Define the primary blue color */
+  --primary-orange: #FFC400;
+  --primary-red: #FF0000; /* Define the primary orange color */
+}
+
+/* Gradient class */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, var(--primary-blue), var(--primary-orange), var(--primary-red));
+  background-clip: text;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4; /* Light background */
+  color: #333; /* Dark text for contrast */
+}
+
+h1, h2, h3 {
+  color: #0056b3; /* Primary color for headings */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+ /*background: url('https://png.pngtree.com/background/20230108/original/pngtree-background-white-gray-gradient-business-vector-picture-image_1996067.jpg');
+  background-size: 1280px;
+  background-repeat: no-repeat;*/
+}
+
+.logo-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 30s linear infinite;
+  will-change: transform;
+}
+
+.logo-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
