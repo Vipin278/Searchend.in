@@ -127,10 +127,11 @@ export default function Footer() {
             {/* Copyright Section */}
             <div className="text-center text-sm">
                 <p>&copy; 2025 Search End Staffing Solutions. All rights reserved.</p>
-                <p className="text-sm text-gray-500"> Designed and maintained by <a href="https://www.nineztech.com/" className="text-blue-300 hover:text-blue-300">Ninez IT-Tech Solutions Pvt. Ltd.</a></p>
+               /*<p className="text-sm text-gray-500"> Designed and maintained by <a href="https://www.nineztech.com/" className="text-blue-300 hover:text-blue-300">Ninez IT-Tech Solutions Pvt. Ltd.</a></p>*/
             </div>
         </div>
       </footer>
     </div>
   );
+
 }
